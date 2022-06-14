@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class lsh_13333_java {
+public class LSH_13333_java {
 
     static ArrayList<String> answerList = new ArrayList<>();
 
