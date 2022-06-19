@@ -6,3 +6,5 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+# pc별 jdk버전 오류 방지
+/.idea/misc.xml

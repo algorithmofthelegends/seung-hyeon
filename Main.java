@@ -1,47 +1,45 @@
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args)
     {
-        /**
-         *  n = 1~10000
-         *  m = 1; // n으로 만들 수 있는 가짓수
-         *
-         *  String arr = 입력받은 배열
-         *
-         *  for(i=1; i<=n; i++)
-         *  {
-         *      m = m*i;
-         *  }
-         *
-         *  for(i=1; m<i
-         */
+
         Scanner scan = new Scanner(System.in);
 
-        int n = Integer.parseInt(scan.nextLine());
-        String[] arr = scan.nextLine().split(" ");
-        String answer = "";
+        // 0층 초기화한 배열생성 , 층수 배열, 동호수 배열생성
+        ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12,13,14));
+        ArrayList<Integer> floor = new ArrayList<>();
+        ArrayList<Integer> apartNumber = new ArrayList<>();
 
-
-        for(int i=0; i<arr.length-1; i++)
+        int T = Integer.parseInt(scan.nextLine());
+        for(int i=0; i<T; i++)
         {
-            if(Integer.parseInt(arr[i]) > Integer.parseInt(arr[i+1])) break;
-            if(i+1 == arr.length-1)
+            floor.add(Integer.parseInt(scan.nextLine()));
+            apartNumber.add(Integer.parseInt(scan.nextLine()));
+        }
+
+        // T층만큼 배열생성
+        for(int i=14; i<(T+1)*14; i++)
+        {
+            if(i%14 == 0)
             {
-                for(int j=0; j<arr.length; j++)
-                {
-                    answer += arr[j];
-                    if(j != arr.length-1) answer += " ";
-                }
-                System.out.println(answer);
-                return;
+                arr.add(1);
+            }
+            else
+            {
+                arr.add(arr.get(i-1)+arr.get(i-14));
             }
         }
 
+        // 동호수 인원수 출력
+        for(int i=0; i<T; i++)
+        {
+            System.out.println(arr.get( (floor.get(i)*14 -1)  + apartNumber.get(i) ));
+        }
 
-        System.out.println("아녀");
     }
 }
 
