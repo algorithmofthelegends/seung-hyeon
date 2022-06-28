@@ -1,9 +1,8 @@
+package bronze;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class LSH_11296_java {
     public static void main(String[] args)
     {
 
@@ -83,3 +82,5 @@ public class Main {
     }
 }
 
+
+}

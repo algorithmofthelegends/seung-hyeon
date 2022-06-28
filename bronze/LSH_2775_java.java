@@ -22,7 +22,7 @@ public class LSH_2775_java {
             apartNumber.add(Integer.parseInt(scan.nextLine()));
         }
 
-        // T층만큼 배열생성 
+        // T층만큼 배열생성
         for(int i=14; i<(T+1)*14; i++)
         {
             if(i%14 == 0)
