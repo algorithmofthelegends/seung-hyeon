@@ -81,6 +81,3 @@ public class LSH_11296_java {
         }
     }
 }
-
-
-}
