@@ -1,10 +1,10 @@
+package bronze;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class LSH_10448_java {
     public static void main(String[] args)
     {
 
@@ -75,6 +75,4 @@ public class Main {
     public static int tn(int n){
         return (n*(n+1))/2;
     }
-
 }
-

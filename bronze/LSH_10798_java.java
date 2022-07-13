@@ -3,7 +3,7 @@ package bronze;
 import java.util.Scanner;
 
 public class LSH_10798_java {
-    
+
 
     public class Main {
         public static void main(String[] args)
