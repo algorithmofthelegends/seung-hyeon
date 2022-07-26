@@ -1,10 +1,8 @@
+package bronze;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class LSH_1236_java {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -48,6 +46,4 @@ public class Main {
         max = Math.max(max,count);
         System.out.println(max);
     }
-
 }
-
